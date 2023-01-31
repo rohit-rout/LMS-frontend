@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="update_book">
+  <h2>UPDATE THIS BOOK DETAILS</h2>
+  <form (ngSubmit)="handleSubmit()">
+    <div class="form_container">
+      <div class="mb-3 row">
+        <label for="title" class="col-sm-2 col-form-label">Title</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="title"
+            id="title"
+            value="{{ title }}"
+            name="title"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="author" class="col-sm-2 col-form-label">Author</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            [(ngModel)]="author"
+            class="form-control"
+            id="author"
+            value="{{ author }}"
+            name="author"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-dark">Update</button>
+    </div>
+  </form>
+</div>

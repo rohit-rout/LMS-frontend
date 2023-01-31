@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.text-success {
+  color: limegreen !important;
+}
+
+.border-success {
+  border-color: limegreen !important;
+}
+
+.btn-success {
+  background-color: white !important;
+  color: limegreen !important;
+}
+
+.bg-success {
+  background-color: limegreen !important;
+}
+
+.fs-7 {
+  font-size: 12px;
+}
+
+.fs-8 {
+  font-size: 15px;
+}

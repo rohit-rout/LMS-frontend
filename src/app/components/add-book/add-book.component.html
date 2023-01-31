@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="add_book">
+
+  <div class="add_book_container">
+       <h2 class="book_detail_heading">FILL THE BOOK DETAILS </h2> 
+       <form (ngSubmit)="handleSubmit()">
+      <div class=" my_form form-floating mb-3" >
+          <input type="text" class="form-control form-control-lg" id="title" name="title" [(ngModel)]="title" >
+          <label for="floatingInput">Title</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control form-control-lg" id="author" name="author"  [(ngModel)]="author">
+          <label for="floatingPassword">Author</label>
+
+        </div>
+        <button type='submit' class="btn btn-dark">DONE</button>
+    </form>
+  </div>
+
+</div>

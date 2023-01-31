@@ -1,0 +1,30 @@
+<div class="home">
+ 
+  <app-header></app-header>
+  <div class="body">
+
+    <div class="banner">
+      <p>Welcome to Books Library</p>
+      <h1>FIND AMAZING BOOkS BELOW</h1>
+
+      <a href="#card_container">
+        <button class="btn btn-dark">
+          Scroll 
+        </button>
+      
+      </a>
+    </div>
+
+    <br/>
+    <br/>
+    <hr/>
+    <h2 class="heading">Featured Books </h2>
+    <br/>
+    <br/>
+    <div class="card_container">
+      <div *ngFor="let book of books">
+        <app-book-card [book]="book"></app-book-card>
+      </div>
+    </div>
+  </div>
+</div>
